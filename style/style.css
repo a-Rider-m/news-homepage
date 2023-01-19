@@ -65,7 +65,7 @@ header {
     background-image: url('../assets/images/icon-menu.svg');
 }
 
-.close-button {
+.menu-container__close-button {
     position: absolute;
     right: 20px;
     width: 40px;
@@ -73,7 +73,7 @@ header {
     background-image: url('../assets/images/icon-menu-close.svg');
 }
 
-.header-container__menu {
+.menu-container {
     padding:  20px 30px;
     position: absolute;
     top: 0;
@@ -83,7 +83,7 @@ header {
     background-color: var(--off-white);
 }
 
-.header-container__menu .menu {
+.menu-container__menu {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -92,11 +92,11 @@ header {
     font-size: 1.8rem;
 }
 
-.header-container__menu .menu ul {
+.menu-container__menu ul {
     list-style: none;
 }
 
-.header-container__menu .menu ul a {
+.menu-container__menu ul a {
     color: var(--very-dark);
     text-decoration: none;
 }
