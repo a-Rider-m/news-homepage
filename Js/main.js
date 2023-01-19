@@ -1,5 +1,5 @@
-const burgerMobileButton = document.querySelector('.header-button');
-const menuMobile = document.querySelector('.header-menu--mobile');
+const burgerMobileButton = document.querySelector('.header-container__button');
+const menuMobile = document.querySelector('.header-container__menu');
 const closeMobileButton = document.querySelector('.close-button');
 
 burgerMobileButton.addEventListener('click', toggleMobileMenu);

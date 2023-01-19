@@ -9,26 +9,29 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fredoka+One&family=Inter:wght@400;700;800&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="header-logo">
-            <img src="./assets/images/logo.svg" alt="">
+    <header class="header-container">
+
+        <div class="header-container__logo">
+            <img src="./assets/images/logo.svg" alt="W logo">
         </div>
-        <div class="header-button">
-            <img src="./assets/images/icon-menu.svg" alt="">
+
+        <div class="header-container__button">
+            <span class="menu-buttons burger-button"></span>
         </div>
-        <div class="header-menu--mobile inactive">
-            <div class="close-button">
-                <img src="./assets/images/icon-menu-close.svg">
+        
+        <div class="header-container__menu inactive">
+            <span class="menu-buttons close-button"></span>
+            <div class="menu">
+                <ul><a href="#">Home</a></ul>
+                <ul><a href="#">News</a></ul>
+                <ul><a href="#">Popular</a></ul>
+                <ul><a href="#">Trending</a></ul>
+                <ul><a href="#">Categories</a></ul>
             </div>
-            <div class="menu-mobile">
-                <p>Home</p>
-                <p>News</p>
-                <p>Popular</p>
-                <p>Trending</p>
-                <p>Categories</p>
-            </div>
         </div>
+
     </header>
+
     <main>
         <section class="main-container">
             <span class="main-container__web3img"></span>
