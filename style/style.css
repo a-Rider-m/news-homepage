@@ -135,7 +135,7 @@ main {
     color: var(--dark-grayish);
 }
 
-.main-container button {
+.main-button {
     width: 50%;
     height: 40px;   
     border: none;
@@ -168,9 +168,13 @@ main {
     border-bottom: solid 1px var(--dark-grayish);
 }
 
-.info-container__news h3 {
-    color: var(--off-white);
+.info-container__subtitle {
+    display: inline-block;
     margin-bottom: 8px;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--off-white);
+    text-decoration: none;
 }
 
 .info-container__news p {
@@ -223,6 +227,12 @@ main {
     color: var(--grayish);
 }
 
+.articles-container__info a {
+    text-decoration: none;
+    color: var(--very-dark);
+    font-weight: 700;
+}
+
 .articles-container__info p {
     color: var(--dark-grayish);
 }
@@ -260,6 +270,11 @@ main {
         flex-direction: row;
     }
 
+    .menu-container__menu ul a:hover {
+        cursor: pointer;
+        color: var(--soft-red);
+    }
+
     .menu-container__close-button {
         display: none;
     }
@@ -281,4 +296,16 @@ main {
         gap: 30px;
     }
 
+    .main-button:hover {
+        background-color: var(--very-dark);
+        cursor: pointer;
+    }
+
+    .info-container__subtitle:hover {
+        color: var(--soft-orange);
+    }
+
+    .articles-container__info a:hover {
+        color: var(--soft-red);
+    }
 }
