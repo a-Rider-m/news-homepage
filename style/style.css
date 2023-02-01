@@ -103,7 +103,7 @@ body {
 
 main {
     width: 100%;
-    height: auto;
+    height: 100%;
     padding: 0px 20px;
 }
 
@@ -148,7 +148,7 @@ main {
 .info-container {
     width: 100%;
     height: auto;
-    padding: 20px;
+    padding: 30px 20px;
     background-color: var(--very-dark);
 }
 
@@ -182,19 +182,17 @@ main {
 }
 
 .articles-container {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr; 
     width: 100%;
-    margin: 50px 0;
-    gap: 30px;
+    height: auto;
 }
 
 .articles-container__articles{
     display: grid;
-    height: 100%;
+    height: auto;
     grid-template-columns: 1fr 2fr;
     gap: 15px;
     padding: 5px;
+    margin: 15px 0; 
 }
 
 .articles-container__img {
@@ -218,9 +216,9 @@ main {
 }
 
 .articles-container__info {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+    display: grid;
+   height: auto;
+   gap: 10px;
 }
 
 .articles-container__info h2 {
@@ -237,7 +235,7 @@ main {
     color: var(--dark-grayish);
 }
 
-@media (min-width: 600px) {
+@media (min-width: 800px) {
     body {
         width: 1200px;
         margin: auto;
@@ -252,6 +250,11 @@ main {
         justify-content: space-between;
         align-items: center;
         height: 150px;
+    }
+
+    .header-container__logo {
+        width: 70px;
+        height: 40px;
     }
 
     .header-container__button {
@@ -270,6 +273,14 @@ main {
         flex-direction: row;
     }
 
+    .menu-container__menu ul {
+        margin-left: 20px;
+    }
+
+    .menu-container__menu ul a {
+        color: #5D5F79;
+    }
+
     .menu-container__menu ul a:hover {
         cursor: pointer;
         color: var(--soft-red);
@@ -281,13 +292,17 @@ main {
 
     main {
         display: grid;
-        grid-template-columns: 2fr 1fr;
+        grid-template-areas: 
+            "main main main info"
+            "article article article article";
         gap: 30px;
         padding: 0;
+        line-height: 2.6rem;
     }
 
     .main-container {
         display: grid;
+        grid-area: main;
     }
 
     .main-container__title {
@@ -296,13 +311,43 @@ main {
         gap: 30px;
     }
 
+    .main-container__title h1 {
+        line-height: 6rem;
+        font-weight: 800;
+        font-size: 6rem;
+    }
+
+    .main-container__title div {
+        padding: 0 20px;
+    }
+    
+    .main-button {
+        margin: 30px 0 0 0;
+    }
+
     .main-button:hover {
         background-color: var(--very-dark);
         cursor: pointer;
     }
 
+    .info-container {
+        display: grid;
+        grid-area: info;
+    }
+
+    .info-container__title {
+        display: inline-block;
+        font-size: 3.5rem;
+    }
+
     .info-container__subtitle:hover {
         color: var(--soft-orange);
+    }
+
+    .articles-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-area: article;
     }
 
     .articles-container__info a:hover {
