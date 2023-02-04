@@ -4,34 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>News Home</title>
     <link rel="stylesheet" href="./style/style.css">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fredoka+One&family=Inter:wght@400;700;800&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header-container">
 
-        <a href="#" class="header-container__logo">
-            <img src="./assets/images/logo.svg" alt="W logo">
+        <a href="#" class="logo">
+            <img 
+            src="./assets/images/logo.svg" 
+            alt="W logo">
         </a>
-
-        <div class="header-container__button">
-            <span class="menu-buttons burger-button"></span>
-        </div>
         
-        <div class="menu-container inactive">
-            <span class="menu-buttons menu-container__close-button"></span>
-            <div class="menu-container__menu">
-                <ul><a href="#">Home</a></ul>
-                <ul><a href="#">News</a></ul>
-                <ul><a href="#">Popular</a></ul>
-                <ul><a href="#">Trending</a></ul>
-                <ul><a href="#">Categories</a></ul>
+        <div class="burger-button">
+            <img src="./assets/images/icon-menu.svg" alt="burger button">
+        </div> 
+        
+        <nav class="nav-bar inactive">
+            <div class="close-button">
+                <img src="./assets/images/icon-menu-close.svg" alt="close button">
             </div>
-        </div>
-
+            <ul class="nav-bar__ul">
+                <li class="nav-bar__item"><a href="#">Home</a></li>
+                <li class="nav-bar__item"><a href="#">News</a></li>
+                <li class="nav-bar__item"><a href="#">Popular</a></li>
+                <li class="nav-bar__item"><a href="#">Trending</a></li>
+                <li class="nav-bar__item"><a href="#">Categories</a></li>
+            </ul>
+        </nav>
     </header>
 
+    <!--
     <main>
 
         <section class="main-container">
@@ -95,6 +99,7 @@
         </section>
 
     </main>
+    -->
     <script src="./Js/main.js"></script>
 </body>
 </html>
