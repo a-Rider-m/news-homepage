@@ -26,48 +26,49 @@
                 <img src="./assets/images/icon-menu-close.svg" alt="close button">
             </div>
             <ul class="nav-bar__ul">
-                <li class="nav-bar__item"><a href="#">Home</a></li>
-                <li class="nav-bar__item"><a href="#">News</a></li>
-                <li class="nav-bar__item"><a href="#">Popular</a></li>
-                <li class="nav-bar__item"><a href="#">Trending</a></li>
-                <li class="nav-bar__item"><a href="#">Categories</a></li>
+                <li class="nav-bar__item"><a href="#" title="Home">Home</a></li>
+                <li class="nav-bar__item"><a href="#" title="News">News</a></li>
+                <li class="nav-bar__item"><a href="#" title="Popular">Popular</a></li>
+                <li class="nav-bar__item"><a href="#" title="Trending">Trending</a></li>
+                <li class="nav-bar__item"><a href="#" title="Categories">Categories</a></li>
             </ul>
         </nav>
     </header>
 
+    <main>
+        <section class="outstanding-new">
+            <picture class="outstanding-new__img">
+                <source media="(min-width: 800px)" srcset="./assets/images/image-web-3-desktop.jpg">
+                <source media="(min-width:300px)" srcset="./assets/images/image-web-3-mobile.jpg">
+                <img src="./assets/images/image-web-3-mobile.jpg" alt="imagen de la noticia destacada">
+            </picture>
+            <h1 class="outstanding-new__title">The Bright Future of Web 3.0?</h1>
+            <p class="outstanding-new__description">We dive into the next evolution of the web that claims to put the power of the platfomrs back into the hands of the people. But it is really fulfilling its promise?</p>
+            <form>
+                <button formaction="index.html" type="submit" class="main-button">READ MORE</button>
+            </form>
+        </section>
+
+        <div class="news-container">
+            <h2 class="news-container__title">New</h2>
+
+            <section class="news-container__news">
+                <h3 class="news-container__subtitle"><a href="#">Hydrogen VS Electric Cars</a></h3>
+                <p class="news-container__description">Will hydrogen-fueled cars ever catch up to EVs?</p>
+            </section>
+            <section class="news-container__news news-container__news--border">
+                <h3 class="news-container__subtitle"><a href="#">The Downsides of AI Artistry</a></h3>
+                <p class="news-container__description">What are the possible adverse effects of on-demand AI image generation?</p>
+            </section>
+            <section class="news-container__news">
+                <h3 class="news-container__subtitle"><a href="#">Is VC Funding Drying Up?</a></h3>
+                <p class="news-container__description">Private funding by VC firms is down 50% YOY. We take a look at what that means</p>
+            </section>
+        </div>
+    </main>
+
     <!--
     <main>
-
-        <section class="main-container">
-            <span class="main-container__web3img"></span>
-            <div class="main-container__title">
-                <h1>The Bright Future of Web 3.0?</h1>
-                <div>
-                    <p>We dive into the next evolution of the web that claims to put the power of the platfomrs back into the hands of the people. But is it really fulfilling its promise?</p>
-                    <form>
-                        <button formaction="index.html" type="submit" class="main-button">READ MORE</button>
-                    </form>
-                </div>
-            </div>
-        </section>
-
-        <section class="info-container">
-            <h2 class="info-container__title">New</h2>
-            <div class="info-container__cardnews">
-                <div class="info-container__news">
-                    <a class="info-container__subtitle" href="#">Hydrogen VS Electrics Cars</a>
-                    <p>Will hydoren-fueled cars ever catch up to EVs?</p>
-                </div>      
-                <div class="info-container__news">
-                    <a class="info-container__subtitle" href="#">The Downsides of AI Artistry</a>
-                    <p>What are the possible adverse effects of on-demand AI image generation?</p>
-                </div>
-                <div class="info-container__news">
-                    <a class="info-container__subtitle" href="#">Is VC Funding Drying Up?</a>
-                    <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
-                </div>
-            </div>
-        </section>
 
         <section class="articles-container">
             <div class="articles-container__articles">
