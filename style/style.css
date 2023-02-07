@@ -29,10 +29,11 @@ html {
 
 body {
     display: grid;
-    grid-template-rows: 100px auto;
+    grid-template-rows: 100px auto 100px;
     grid-template-areas: 
         "header"
-        "main";
+        "main"
+        "footer";
     width: 100%;
     height: 100%;
     font-size: var(--md-font);
@@ -207,266 +208,41 @@ main {
     color: var(--grayish);
 }
 
-/*
-main {
-    width: 100%;
-    height: 100%;
-    padding: 0px 20px;
-}
-
-.main-container {
-    width: 100%;
-    min-width: 320px;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-}
-
-.main-container__web3img {
-    width: 100%;
-    height: 300px;
-    margin-bottom: 20px;
-    background-image: url('../assets/images/image-web-3-mobile.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.main-container__title h1 {
-    font-size: 4rem;
-    margin-bottom: 10px;
-}
-
-.main-container__title p {
-    color: var(--dark-grayish);
-}
-
-.main-button {
-    width: 50%;
-    height: 40px;   
-    border: none;
-    margin: 20px 0;
-    font-weight: 700;
-    color: var(--off-white);
-    background-color: var(--soft-red);
-}
-
-.info-container {
-    width: 100%;
-    height: auto;
-    padding: 30px 20px;
-    background-color: var(--very-dark);
-}
-
-.info-container__title {
-    color: var(--soft-orange);
-}
-
-.info-container__cardnews {
+/*Seccion de blogs*/
+.blogs-container {
     display: grid;
     gap: 20px;
-    margin-top: 20px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
 }
 
-.info-container__news:nth-child(2) {
-    padding: 20px 0;
-    border-top: solid 1px var(--dark-grayish);
-    border-bottom: solid 1px var(--dark-grayish);
-}
-
-.info-container__subtitle {
-    display: inline-block;
-    margin-bottom: 8px;
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: var(--off-white);
-    text-decoration: none;
-}
-
-.info-container__news p {
-    color: var(--grayish);
-}
-
-.articles-container {
+.blogs-container__blogs {
+    display: grid;
+    grid-template-columns: 100px auto;
+    gap: 10px;
     width: 100%;
     height: auto;
 }
 
-.articles-container__articles{
-    display: grid;
-    height: auto;
-    grid-template-columns: 1fr 2fr;
-    gap: 15px;
-    padding: 5px;
-    margin: 15px 0; 
-}
-
-.articles-container__img {
+.blogs-container__img {
     width: 100%;
     height: 100%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 }
-
-.articles-container__img--retropc {
-    background-image: url('../assets/images/image-retro-pcs.jpg');
-}
-
-.articles-container__img--laptops {
-    background-image: url('../assets/images/image-top-laptops.jpg');
-}
-
-.articles-container__img--gaming {
-    background-image: url('../assets/images/image-gaming-growth.jpg');
-}
-
-.articles-container__info {
+.blogs-container__div {
     display: grid;
-   height: auto;
-   gap: 10px;
+    gap: 10px;  
 }
 
-.articles-container__info h2 {
+.blogs-container__number {
+    font-size: 3rem;
     color: var(--grayish);
 }
 
-.articles-container__info a {
-    text-decoration: none;
-    color: var(--very-dark);
-    font-weight: 700;
-}
-
-.articles-container__info p {
+.blogs-container__description {
     color: var(--dark-grayish);
 }
 
-@media (min-width: 600px) {
-    body {
-        width: 600px;
-        margin: auto;
-    }
+footer {
+    grid-area: footer;
 }
-
-@media (min-width: 1200px) {
-    body {
-        width: 1200px;
-        margin: auto;
-    }
-    
-    .inactive {
-        display: inline-block;
-    }
-
-    .header-container {
-        padding: 0;
-        justify-content: space-between;
-        align-items: center;
-        height: 150px;
-    }
-
-    .header-container__logo {
-        width: 70px;
-        height: 40px;
-    }
-
-    .header-container__button {
-        display: none;
-    }
-
-    .menu-container {
-        padding: 0;
-        background-color: transparent;
-        position: relative;
-        height: auto;
-    }
-
-    .menu-container__menu {
-        justify-content: end;
-        flex-direction: row;
-    }
-
-    .menu-container__menu ul {
-        margin-left: 20px;
-    }
-
-    .menu-container__menu ul a {
-        color: #5D5F79;
-    }
-
-    .menu-container__menu ul a:hover {
-        cursor: pointer;
-        color: var(--soft-red);
-    }
-
-    .menu-container__close-button {
-        display: none;
-    }
-
-    main {
-        display: grid;
-        grid-template-areas: 
-            "main main main info"
-            "article article article article";
-        gap: 30px;
-        padding: 0;
-        line-height: 2.6rem;
-    }
-
-    .main-container {
-        display: grid;
-        grid-area: main;
-    }
-
-    .main-container__title {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 30px;
-    }
-
-    .main-container__title h1 {
-        line-height: 6rem;
-        font-weight: 800;
-        font-size: 6rem;
-    }
-
-    .main-container__title div {
-        padding: 0 20px;
-    }
-    
-    .main-button {
-        margin: 30px 0 0 0;
-    }
-
-    .main-button:hover {
-        background-color: var(--very-dark);
-        cursor: pointer;
-    }
-
-    .info-container {
-        display: grid;
-        grid-area: info;
-    }
-
-    .info-container__title {
-        display: inline-block;
-        font-size: 3.5rem;
-    }
-
-    .info-container__subtitle:hover {
-        color: var(--soft-orange);
-    }
-
-    .articles-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-area: article;
-    }
-
-    .articles-container__info a:hover {
-        color: var(--soft-red);
-    }
-}
-
-*/
