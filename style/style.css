@@ -35,6 +35,8 @@ body {
         "main"
         "footer";
     width: 100%;
+    max-width: 400px;
+    margin: auto;
     height: 100%;
     font-size: var(--md-font);
     font-family: var(--font-primary);
@@ -108,13 +110,13 @@ body {
     list-style: none;
 }
 
-.nav-bar__ul li {
+.nav-bar__item {
     width: 100%;
     margin-left: 20px;
     font-size: 1.8rem;
 }
 
-.nav-bar__ul li a {
+.nav-bar__item a {
     color: var(--very-dark);
     text-decoration: none;
 }
@@ -270,12 +272,18 @@ footer {
         max-width: 1440px;
         height: 100vh;
         margin: auto;
+        padding: 0px 100px;
     }
     
     /*Header*/
     .header-container {
         align-items: center;
-        background-color: blue;
+    }
+
+    .logo {
+        width: 6rem;
+        height: 4rem;
+        margin: 0;
     }
 
     .burger-button {
@@ -298,15 +306,22 @@ footer {
         display: grid;
         grid-auto-flow: column;
         align-content: center;
+        justify-content: end;
+        gap: 15px;
         width: 100%;
         height: 100%;
         list-style: none;
     }
 
-    .nav-bar__item {
-        margin: 0;
+    .nav-bar__item a {
+        font-size: 1.5rem;
+        color: var(--dark-grayish);
     }
 
+    .nav-bar__item a:hover {
+        color: var(--soft-red);
+    }
+    
     /*Main*/
     main {
         display: grid;
